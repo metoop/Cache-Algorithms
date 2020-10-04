@@ -1,11 +1,14 @@
+#include "bits/stdc++.h"
+using namespace std;
+
 class LRUCache {
-    int caps;
+    int capacity;
     unordered_map<int, pair<int, list<int>::iterator> > *cache;
     list<int> *cache_list;
     public:
 
     LRUCache(int capacity) {
-        caps = capacity;
+        this->capacity = capacity;
         cache = new unordered_map<int,pair<int, list<int>::iterator> >();
         cache_list = new list<int>();
     }
@@ -21,7 +24,7 @@ class LRUCache {
         cache_list->push_front(key);
         cache->insert( { key, {val, cache_list->begin()} } );
         
-        if(cache_list->size() > caps){
+        if(cache_list->size() > this->capacity){
             int k = cache_list->back();
             cache->erase(k);
             cache_list->pop_back();
@@ -38,10 +41,17 @@ class LRUCache {
         cache_list->push_front(key);
         cache->insert( { key, {value, cache_list->begin()} } );            
 
-        if(cache_list->size() > caps){
+        if(cache_list->size() > this->capacity){
             int k = cache_list->back();
             cache->erase(k);
             cache_list->pop_back();
         }                
     }
 };
+
+int main(){
+    auto lru = new LRUCache(10);
+    lru->put(1, 100);
+    cout << lru->get(1) << " ";
+
+}
