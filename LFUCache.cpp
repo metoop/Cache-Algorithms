@@ -28,20 +28,19 @@ lass LFUCache {
   void put(int key, int value) {
     if (size <= 0) return;
     if (mp.find(key) != mp.end()) {
-      //delete item from freq
+      
       auto it = mp[key];
       int curFreq = it -> freq;
       fqMp[curFreq].erase(it);
 
-      //increase the freq
-      //insert at the last in the freq map
+
       fqMp[curFreq + 1].push_back({
         key,
         value,
         curFreq + 1
       });
 
-      //update iterator in key map
+      
       mp[key] = prev(fqMp[curFreq + 1].end());
 
       if (fqMp[minFreq].empty())
@@ -50,10 +49,8 @@ lass LFUCache {
       if (mp.size() >= size) {
         auto it = fqMp[minFreq].begin();
         int key = it -> key;
-        //delete from mpkey first
         mp.erase(key);
 
-        //delete from freq map
         fqMp[minFreq].pop_front();
       }
 
