@@ -26,7 +26,10 @@ This is an open-to-all repository, where we encourage, students, teachers, devel
 6. Checkout to a new branch for every PR you make. The PR should be the name of the algorithm, say: ```LRUCache_Language```
 7. Start contributing   !!!!!!
 
+---
+
 **REMEMBER :** 
   - The file name must be the name of the your Class of model. Say the LRUCache problem. So, your file name should be : ```LRUCache.cpp```
+
 
 HAPPY CONTRIBUTING !!
