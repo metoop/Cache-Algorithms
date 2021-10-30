@@ -1,14 +1,16 @@
 # Cache-Algorithms
 
+
 [![GitHub issues](https://img.shields.io/github/issues/metoop/Cache-Algorithms)](https://github.com/metoop/Cache-Algorithms/issues)
 [![GitHub forks](https://img.shields.io/github/forks/metoop/Cache-Algorithms)](https://github.com/metoop/Cache-Algorithms/issues)
 [![GitHub stars](https://img.shields.io/github/stars/metoop/Cache-Algorithms?style=social)](https://github.com/metoop/Cache-Algorithms/issues)
+
 
 <p align="center">
   <img src="https://embed-fastly.wistia.com/deliveries/49bd387c40e2c5aada92abdf973bc46d.webp?image_crop_resized=960x540">
 </p>
 
-### Welcome To Open-source Graph-Algorithm 
+## Welcome To Open-source Graph-Algorithm 
 
 This repository will include object oriented classes of graphs and it's algorithm.
 This is an open-to-all repository, where we encourage, students, teachers, developers, professionals, beginners, intermediates and experts : everyone, to come and code.
@@ -16,7 +18,7 @@ This is an open-to-all repository, where we encourage, students, teachers, devel
 ##### Languages : As per issue.
 
 
-### HOW TO CONTRIBUTE
+## HOW TO CONTRIBUTE
 
 1. Star the repository
 2. Claim an Issue by commenting on it to get assigned. **DO NOT RAISE A PR BEFORE YOU HAVE BEEN ASSIGNED. YOUR PR WILL STAND INVALID.**
